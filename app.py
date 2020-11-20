@@ -14,7 +14,7 @@ def run():
 
     from PIL import Image
     image = Image.open('logo.jpg')
-    image_hospital = Image.open('House.jpg')
+    #image_hospital = Image.open('House.jpg')
 
     st.image(image,use_column_width=False)
 
@@ -25,7 +25,7 @@ def run():
     st.sidebar.info('This app is created to predict housing  charges')
 
 
-    st.sidebar.image(image_hospital)
+    #st.sidebar.image(image_hospital)
 
 
 
@@ -46,7 +46,7 @@ def run():
         sqft_above = st.text_input('Sqftabove(e.g 1234 )')
         sqft_basement = st.text_input('Sqftbasement(e.g 230 or 1234)')
         yr_built = st.text_input('Year can be 0 and start from 1920 and end 2009')
-        yr_renovated =st.selectbox('Year', range(1992, 2005))
+        yr_renovated =st.text_input('Year can be 0 and start from 1992 and end 2009')
         city = st.selectbox('City', ["Renton", "Seattle","Bellevue","Redmond","Kirkland","Issaquah","Kent","Auburn","Sammamish","Federal Way",
         "Shoreline","Shoreline","Maple Valley","Mercer Island","Burien","Snoqualmie","Kenmore","Des Moines","North Bend",
         "Covington","Duvall","Lake Forest Park","Newcastle","Bothell","Vashon","SeaTac","Tukwila","Enumclaw","Carnation","Normandy Park","Medina","Fall City",
