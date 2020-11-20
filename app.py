@@ -14,7 +14,7 @@ def run():
 
     from PIL import Image
     image = Image.open('logo.jpg')
-    #image_hospital = Image.open('House.jpg')
+    #image_house = Image.open('House.jpg')
 
     st.image(image,use_column_width=False)
 
@@ -25,7 +25,7 @@ def run():
     st.sidebar.info('This app is created to predict housing  charges')
 
 
-    #st.sidebar.image(image_hospital)
+    #st.sidebar.image(image_house)
 
 
 
